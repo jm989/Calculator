@@ -8,26 +8,27 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display">
-            
-        </div>
-        <div class="buttons">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button class="operation">+</button>
-            <button class="operation">-</button>
-            <button class="operation">X</button>
-            <button class="operation">/</button>
-            <button class="operation">=</button>
+        <input id="display" readonly>
+        <div id="buttons">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('*')" class="operator">X</button>
+            <button onclick="appendToDisplay('/')" class="operator">/</button>
+            <button onclick="appendToDisplay('.')" class="operator">.</button>
+            <button onclick="calculate()" class="operator">=</button>
+            <button onclick="clearDisplay()" class="operator">AC</button>
         </div>
     </div>
+    <script src="./calculator.js"></script>
 </body>
 </html>
